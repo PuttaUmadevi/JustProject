@@ -1,0 +1,45 @@
+/* HauntedHouse.css */
+
+.HauntedOutDiv {
+    /* background-image: url(../just.jpg); */
+    /* background-size: cover; */
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    height: 130vh; /* Set full viewport height */
+    width: 100%;
+    background-image: url(../just.jpg);
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    animation: move 4s linear infinite; /* Keyframe animation */
+  }
+
+  @keyframes move {
+    from {
+        background-position: 0 0; /* Start position */
+    }
+    to {
+        background-position: 100% 0; /* End position */
+    }
+}
+  
+  .HauntedContent {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 80px; /* Adds gap between carousel and navbar */
+    text-align: center;
+  }
+  
+  .HauntedContent img {
+    width: 80px;
+    height: 500px;
+    object-fit: cover;
+  }
+  
+  .textOnSlide{
+    font-family: cursive;
+
+  }
+  .returnButton {
+    margin-left: 700px;
+    margin-top: 20px;
+  }

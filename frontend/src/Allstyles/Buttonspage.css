@@ -1,0 +1,60 @@
+/* Centering the container */
+.haunted-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 140vh;
+    background-color: #1b1b1b;
+    background-image: url(./just.jpg);
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    animation: move 6s linear infinite; /* Keyframe animation */
+}
+
+@keyframes move {
+    from {
+        background-position: 0 0; /* Start position */
+    }
+    to {
+        background-position: 100% 0; /* End position */
+    }
+}
+
+/* Column layout for the button container */
+.places-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Styling the buttons */
+.places-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 24px;
+    color: #54f534;
+    background-color: #db1212;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 300px; /* Fixed width for a consistent button size */
+    text-align: center;
+    font-family: cursive;
+}
+
+.places-button:hover {
+    background-color: #444;
+    transform: scale(1.05);
+}
+
+.places-button:active {
+    background-color: #555;
+    transform: scale(1);
+}
+
+/* Spooky glow effect */
+.places-button {
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.6), 0 0 20px rgba(0, 255, 0, 0.4);
+}

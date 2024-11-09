@@ -1,0 +1,89 @@
+/* Movies.css */
+/* *{
+ background-image: url(./fog2.jpg);   
+} */
+.movies-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.movie-card {
+    display: flex;
+    align-items: flex-start; /* Align items at the start */
+    background: #222; /* Darker background for a creepy look */
+    color: #eee;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 4px #31eb53;
+    padding: 15px;
+    transition: box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+    box-shadow: 0 6px 12px #e83427;
+}
+
+.movie-image {
+    width: 100px;
+    height: 150px;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+.movie-info {
+    flex-grow: 1;
+}
+
+.movie-info h2 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #a0e0e0;
+}
+
+.year-duration {
+    font-size: 0.9em;
+    color: #bbb;
+    margin-top: 5px;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    margin-top: 5px;
+    color: #ffcc00;
+}
+
+.rating span {
+    color: #e1a227;
+    margin-right: 5px;
+}
+
+.metascore {
+    font-size: 0.8em;
+    font-weight: bold;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+
+.metascore.high {
+    background-color: #4caf50;
+    color: white;
+}
+
+.metascore.low {
+    background-color: #f44336;
+    color: white;
+}
+
+.description {
+    font-size: 0.9em;
+    color: #ccc;
+    margin-top: 10px;
+    line-height: 1.4;
+}

@@ -1,0 +1,26 @@
+/* src/Slider.css */
+.slider-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slider-container {
+    position: relative;
+    text-align: center;
+}
+
+.slider-image {
+    width: 100%; /* Adjust as needed */
+    max-width: 600px; /* Limit maximum size */
+}
+
+.slider-button {
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.back-button {
+    margin-top: 20px;
+}
